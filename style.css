@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  padding: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  --color-1: #2e9599;
+  --color-2: #f7dc66;
+  --color-3: #f36943;
+  --color-4: #f1184c;
+  --color-5: #a8216b;
+  width: 100%;
+  height: 100%;
+}
+body {
+  /* background-image: linear-gradient(180deg, var(--color-1) , var(--color-2)) */
+  background-color: var(--color-1);
+}
+
+button {
+  border: unset;
+  padding: 15px;
+  background-color: var(--color-1);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  color: whitesmoke;
+  outline: unset;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 200px;
+  border: solid 2px black;
+  border-radius: 2;
+  margin: auto;
+  background-color: white;
+}
+
+.squares {
+  width: 20px;
+  height: 20px;
+}
+.snake {
+  background-color: red;
+  border-radius: 7px;
+  /* background-image: url('https://www.featurepics.com/StockImage/20060507/snakeskin-texture-stock-photo-26816.jpg'); */
+  background-color: var(--color-2);
+}
+.apple {
+  background-color: var(--color-4);
+  border-radius: 15px;
+}
+#back-drop {
+  margin: auto;
+
+  width: 300px;
+  background-color: var(--color-3);
+  padding: 80px;
+  border-radius: 15px;
+}
