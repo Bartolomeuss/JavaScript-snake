@@ -94,32 +94,15 @@ function generateApples() {
 generateApples()
 
 function control(e) {
-    // if (e.keyCode === 39) {
-    //     direction = 1
-    // } else if (e.keyCode === 38) {
-    //     direction = - width
-    // } else if (e.keyCode === 37) {
-    //     direction = -1
-    // } else if (e.keyCode === 40) {
-    //     direction = width
-    // }
-
-    switch(e.keyCode){
-        case 40:
-            direction = width
-        break;
-        case 39:
-            direction = 1
-        break;
-        case 38:
-            direction = - width
-        break;
-        case 37:
-            direction = -1
-        break;
+    if (e.keyCode === 39) {
+        direction = 1
+    } else if (e.keyCode === 38) {
+        direction = - width
+    } else if (e.keyCode === 37) {
+        direction = -1
+    } else if (e.keyCode === 40) {
+        direction = width
     }
-
-
 }
 document.addEventListener('keydown', control)
 startBtn.addEventListener('click', startGame)
